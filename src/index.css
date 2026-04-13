@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-c1: #d9ceb2;
+  --brand-c2: #948c75;
+  --brand-c3: #d5ded9;
+  --brand-c4: #7a6a53;
+  --brand-c5: #99b2b7;
+}
+
+html {
+  font-size: clamp(18px, 1.6vw, 24px);
+}
+
+:root {
+  --brand-c1: #d9ceb2;
+  --brand-c2: #948c75;
+  --brand-c3: #d5ded9;
+  --brand-c4: #7a6a53;
+  --brand-c5: #99b2b7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-impact {
+  font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.app-bg {
+  background:
+    radial-gradient(800px 400px at 10% 10%, var(--brand-c3) 0%, transparent 60%),
+    radial-gradient(700px 300px at 90% 20%, var(--brand-c5) 0%, transparent 60%),
+    radial-gradient(600px 300px at 20% 90%, var(--brand-c1) 0%, transparent 60%),
+    linear-gradient(180deg, var(--brand-c1), #ffffff);
+}
